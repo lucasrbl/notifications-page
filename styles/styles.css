@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root {
+    --primary-red-color: hsl(1, 90%, 64%);
+    --primary-blue-color: hsl(219, 85%, 26%);
+    --white-color: hsl(0, 0%, 100%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%);
+    --first-light-grayish-blue: hsl(211, 68%, 94%);
+    --second-light-grayish-blue: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans';
+}
+
+
+p {
+    font-size: 16px;
+}
+
+.container {
+    padding: 60px;
+    background-color: var(--very-light-grayish-blue);
+}
+
+.card {
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: var(--white-color);
+    padding: 2.5rem;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    
+}
+
+
+.notifications-square {
+    background-color: var(--primary-blue-color);
+    color: var(--white-color);
+    display: inline-block;
+    padding: 0.10rem 0.55rem;
+    border-radius: 5px;
+    margin-left: 0.6rem;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.blue-text {
+    color: var(--primary-blue-color);
+    font-weight: 800;
+}
+
+.red-circle {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: var(--primary-red-color);
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+
+.row {
+    background-color: var(--very-light-grayish-blue);
+    margin-top: 10px;
+    padding: 17px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+.seen {
+    background-color: var(--white-color);
+    width: 100%;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+
+img {
+    height: 50px;
+}
+
+.profile-img {
+    margin-right: 20px;
+}
+
+
+
+.read:hover {
+    color: var(--primary-blue-color);
+    cursor: pointer;
+}
+
+
+
+.title > .bold {
+    font-size: 20px;
+}
+
+.time {
+    color: var(--grayish-blue);
+}
+
+
+.message {
+    margin-top: 15px;
+    padding: 1rem;
+    border: 1px solid;
+    border-color: var(--second-light-grayish-blue);
+}
+
+.start {
+    align-items: flex-start;
+}
+
+.chess-picture {
+    height: 40px;
+}
+
+
+.row-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+
+
+@media (max-width: 700px) {
+    p {
+        font-size: 12px;
+    }
+    .header span {
+        font-size: 14px;
+    }
+}
